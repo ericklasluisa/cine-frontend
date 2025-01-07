@@ -11,13 +11,13 @@ function PeliculaCard({ id, title, imgUrl, sala, setInfoPelicula }) {
 
   return (
     <div
-      className="bg-gray-700 text-white p-4 rounded-lg cursor-pointer hover:bg-gray-600 w-64 h-64"
+      className="bg-gray-700 text-white p-4 rounded-lg cursor-pointer hover:bg-gray-600 w-64 h-96"
       onClick={handleClick}
     >
       <img
         src={imgUrl}
         alt={title}
-        className="w-full h-32 object-cover rounded-md"
+        className="w-full h-72 object-cover rounded-md"
       />
       <h2 className="mt-2 text-xl font-bold">{title}</h2>
       <p className="mt-1">Sala: {sala}</p>
